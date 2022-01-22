@@ -12,6 +12,10 @@
       <Controller />
     </div>
   </div>
+  <div class="footer">
+    Thanks to <a href="https://stripe.com/">Stripe</a> ~ Designed by
+    <a href="https://medium.com/@vithushjeytharma">Vithu</a>
+  </div>
 </main>
 
 <style>
@@ -24,23 +28,16 @@
     min-height: 100vh;
   }
 
-  .footer {
-    text-align: center;
-  }
-
-  /* .flex-container {
-    padding: 10px;
-  }
-  .flex-item-left {
-    padding-bottom: 10px;
-  } */
-
   @media only screen and (max-width: 600px) {
     .flex-container {
       padding: 10px;
     }
     .flex-item-left {
       padding-bottom: 10px;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -59,6 +56,11 @@
 
     .flex-item-right {
       flex: 30%;
+    }
+
+    .footer {
+      width: auto;
+      text-align: center;
     }
   }
 
@@ -84,6 +86,13 @@
       padding-top: 40px;
       padding-bottom: 40px;
       flex: 30%;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 5px;
+      left: 40%;
+      width: auto;
     }
   }
 </style>
