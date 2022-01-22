@@ -20,9 +20,9 @@ export const PaletteStore = writable([
     color4: "#cddafd",
   },
   {
-    color1: "#b8b8ff",
-    color2: "#ffcf4d",
-    color3: "#ff4d6d",
+    color1: "#fff57b",
+    color2: "#FF709B",
+    color3: "#F28882",
     color4: "#f7cad0",
   },
 ]);
