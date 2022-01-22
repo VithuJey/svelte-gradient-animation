@@ -84,15 +84,6 @@
 </div>
 
 <style>
-  .container {
-    background-color: #fff;
-    height: 100%;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-shadow: 18px 18px 29px -5px rgba(0, 0, 0, 0.1);
-  }
-
   .title {
     font-size: 20px;
     text-align: center;
@@ -149,7 +140,42 @@
     background-color: rgb(0, 224, 75);
   }
 
+  @media only screen and (max-width: 600px) {
+    .container {
+      background-color: #fff;
+      height: 100%;
+      border-radius: 20px;
+      padding: 10px 20px 10px 20px;
+      box-shadow: 18px 18px 29px -5px rgba(0, 0, 0, 0.1);
+    }
+    .title {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .container {
+      background-color: #fff;
+      height: 100%;
+      border-radius: 20px;
+      padding: 10px 20px 10px 20px;
+      box-shadow: 18px 18px 29px -5px rgba(0, 0, 0, 0.1);
+    }
+    .title {
+      font-size: 26px;
+      text-align: center;
+    }
+  }
+
   @media only screen and (min-width: 992px) {
+    .container {
+      background-color: #fff;
+      height: 100%;
+      border-radius: 20px;
+      padding: 0 20px 0 20px;
+      box-shadow: 18px 18px 29px -5px rgba(0, 0, 0, 0.1);
+    }
     .title {
       font-size: 24px;
       text-align: center;

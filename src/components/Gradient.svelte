@@ -21,7 +21,7 @@
 
 <canvas
   id="gradient-canvas"
-  style="width: 70vw; height: 100%;
+  style="width: 100%; height: 100%;
       border-radius: 20px;
       --gradient-color-1:{colorSet?.color1}; 
       --gradient-color-2: {colorSet?.color2};

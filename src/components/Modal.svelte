@@ -26,11 +26,11 @@
         > file and add in your project
       </p>
       <p class="sub-title">HTML</p>
-      <pre>{htmlBlock}</pre>
+      <pre class="code-block">{htmlBlock}</pre>
       <p class="sub-title">CSS</p>
-      <pre>{cssBlock}</pre>
+      <pre class="code-block">{cssBlock}</pre>
       <p class="sub-title">JS</p>
-      <pre>{jsBlock}</pre>
+      <pre class="code-block">{jsBlock}</pre>
     </div>
   </div>
 </div>
@@ -40,7 +40,6 @@
     display: block;
     position: fixed;
     z-index: 1;
-    padding-top: 140px;
     left: 0;
     top: 0;
     width: 100%;
@@ -48,8 +47,6 @@
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-    /* border: 1px solid black; */
-    border-radius: 10px;
   }
 
   .hideModal {
@@ -60,8 +57,9 @@
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid rgb(255, 255, 255);
     width: 60%;
+    border-radius: 5px;
   }
 
   .close {
@@ -78,19 +76,8 @@
     cursor: pointer;
   }
 
-  pre {
-    background-color: #e1e1e1;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 14px;
-  }
-
   .info {
     text-align: center;
-  }
-
-  .sub-title {
-    font-size: 20px;
   }
 
   .button-30 {
@@ -139,5 +126,53 @@
   .button-30:active {
     box-shadow: #d6d6e7 0 3px 7px inset;
     transform: translateY(2px);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sub-title {
+      font-size: 16px;
+    }
+    .code-block {
+      background-color: #e1e1e1;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 14px;
+      overflow: scroll;
+    }
+    .modal {
+      padding-top: 30%;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .sub-title {
+      font-size: 18px;
+    }
+    .code-block {
+      background-color: #e1e1e1;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      overflow: scroll;
+    }
+    .modal {
+      padding-top: 15%;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .sub-title {
+      font-size: 20px;
+    }
+    .code-block {
+      background-color: #e1e1e1;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 18px;
+      overflow: scroll;
+    }
+    .modal {
+      padding-top: 5%;
+    }
   }
 </style>
