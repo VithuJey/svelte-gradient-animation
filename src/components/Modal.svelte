@@ -1,11 +1,13 @@
 <script>
+  import { ColorsStore } from "../store/Colors";
+  
   $: showModal = false;
 
   const toggleModal = () => {
     showModal = !showModal;
   };
 
-  const cssBlock = `#gradient-canvas {\nwidth: 100%;\nheight: 100%;\n--gradient-color-1: #161d22;\n--gradient-color-2: #6ec3f4;\n--gradient-color-3: #5c4c85;\n--gradient-color-4: #313ab9;\n}`;
+  $: cssBlock = `#gradient-canvas {\nwidth: 100%;\nheight: 100%;\n--gradient-color-1: ${$ColorsStore?.color1};\n--gradient-color-2: ${$ColorsStore?.color2};\n--gradient-color-3: ${$ColorsStore?.color3};\n--gradient-color-4: ${$ColorsStore?.color4};\n}`;
   const htmlBlock = ` <canvas id="gradient-canvas" data-transition-in />`;
   const jsBlock = `import { Gradient } from './Gradient.js'\n\n// Create your instance\nconst gradient = new Gradient()\n\n// Call initGradient with the selector to your canvas\ngradient.initGradient('#gradient-canvas')`;
 </script>
